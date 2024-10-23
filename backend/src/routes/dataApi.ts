@@ -6,4 +6,4 @@ router.get('catprod/:category',)//show light data of category
 router.get('allcat',)//show categoryies
 router.get('new',)//recently added
 router.get('',)
-// router.('',)
+router.get('',)
