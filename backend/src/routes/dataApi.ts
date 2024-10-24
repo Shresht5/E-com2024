@@ -7,3 +7,5 @@ router.get('allcat',)//show categoryies
 router.get('new',)//recently added
 router.get('',)
 router.get('',)
+
+export default router

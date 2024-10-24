@@ -3,6 +3,9 @@ import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import morgan from "morgan";
+import adminApi from './routes/adminApi'
+import userApi from './routes/userApi'
+import dataApi from './routes/dataApi'
 
 const app = express()
 
@@ -16,8 +19,8 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
-app.use('/data',)
-app.use('/user',)
-app.use('/admin',)
+app.use('/api/data', adminApi)
+app.use('/api/user', userApi)
+app.use('/api/admin', dataApi)
 app.listen(process.env.PORT, () => { console.log('9099 server') })
 
